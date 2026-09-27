@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate Money | KARN</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo"><img src="logo.jpeg" alt="KARN logo" class="logo-img">KARN<span></span></a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#causes">Donate</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#footer">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="form-page">
+    <div class="container">
+      <a href="index.html" class="back-link">&larr; Back to Home</a>
+
+      <div class="form-card">
+        <h1>Donate Money</h1>
+        <p>Your financial contribution helps us cover medicine, school fees, and emergency needs quickly and directly.</p>
+
+        <form>
+          <ul>
+            <li>Full Name</li>
+            <input type="text" required>
+
+            <li>Mobile Number</li>
+            <input type="text" required>
+
+            <li>Email Address</li>
+            <input type="email" required>
+
+            <li>Contribution Amount</li>
+            <div class="option-line"><input type="radio" name="amount" id="amt100"><label for="amt100">&#8377;100</label></div>
+            <div class="option-line"><input type="radio" name="amount" id="amt250"><label for="amt250">&#8377;250</label></div>
+            <div class="option-line"><input type="radio" name="amount" id="amt500"><label for="amt500">&#8377;500</label></div>
+            <div class="option-line"><input type="radio" name="amount" id="amt1000"><label for="amt1000">&#8377;1,000</label></div>
+            <div class="option-line"><input type="radio" name="amount" id="amtOther"><label for="amtOther">Other Amount</label></div>
+
+            <li>Purpose of Contribution</li>
+            <div class="option-line"><input type="radio" name="purpose" id="food"><label for="food">Food Support</label></div>
+            <div class="option-line"><input type="radio" name="purpose" id="clothing"><label for="clothing">Clothing Support</label></div>
+            <div class="option-line"><input type="radio" name="purpose" id="general"><label for="general">General Support</label></div>
+
+            <li>Payment Method</li>
+            <div class="option-line"><input type="radio" name="payment" id="upi"><label for="upi">UPI</label></div>
+            <div class="option-line"><input type="radio" name="payment" id="netbanking"><label for="netbanking">Net Banking</label></div>
+            <div class="option-line"><input type="radio" name="payment" id="otherpay"><label for="otherpay">Other</label></div>
+
+            <li>Message/Note (Optional)</li>
+            <input type="text">
+
+            <li>
+              <div class="option-line">
+                <input type="checkbox" id="confirm2" required>
+                <label for="confirm2">I confirm that the details provided above are accurate.</label>
+              </div>
+            </li>
+
+            <input type="submit" value="Submit Donation">
+          </ul>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer" id="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="logo footer-logo"><img src="logo.jpeg" alt="KARN logo" class="logo-img">KARN<span></span></a>
+        <p>Bringing food, clothes, and hope to families who need it most.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#causes">Donate</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul>
+          <li>Email: hello@karn.org</li>
+          <li>Phone: +91 98765 43210</li>
+          <li>Mumbai, Maharashtra, India</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Twitter">TW</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> KARN. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
